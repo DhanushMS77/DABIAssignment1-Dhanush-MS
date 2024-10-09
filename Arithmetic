@@ -1,0 +1,46 @@
+#Addition
+def add(x, y):
+    return x + y
+
+# Example usage
+num1 = 5
+num2 = 3
+print(f"{num1} + {num2} = {add(num1, num2)}")
+#Subtraction
+def subtract(x, y):
+    return x - y
+
+# Example usage
+num1 = 8
+num2 = 2
+print(f"{num1} - {num2} = {subtract(num1, num2)}")
+#Multiplication
+def multiply(x, y):
+    return x * y
+
+# Example usage
+num1 = 4
+num2 = 7
+print(f"{num1} * {num2} = {multiply(num1, num2)}")
+#Division
+def divide(x, y):
+    if y == 0:
+        return "Error! Division by zero."
+    return x / y
+
+# Example usage
+num1 = 10
+num2 = 2
+print(f"{num1} / {num2} = {divide(num1, num2)}")
+#Logarithm
+import math
+
+def logarithm(x, base=10):
+    if x <= 0:
+        return "Error! Logarithm of non-positive numbers is undefined."
+    return math.log(x, base)
+
+# Example usage
+num = 100
+base = 10
+print(f"log_{base}({num}) = {logarithm(num, base)}")
